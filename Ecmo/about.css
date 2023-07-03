@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.section{
+    width: 100%;
+    min-height: 100vh;
+    background: radial-gradient(hsl(196, 15%, 76%),hsl(217, 52%, 75%));
+}
+.container{
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+.navbar{
+    display: flex;
+    align-items:center;
+    padding: 20px;
+}
+.navbar .home{
+    flex: 1;
+    text-align: right;
+}
+.content-section{
+    float: left;
+    width: 50%;
+    padding-top: 125px;
+    padding-left: 25px;
+}
+.content-section h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+    color:black;
+}
+.content-section p{
+    font-size: 17px;
+    color:black;
+}
+.image-section{
+    float: right;
+    width: 50%;
+    padding-top: 100px;
+    padding-left: 250px;
+}
+.image-section img{
+    width: 300px;
+    height: 370px;
+    border-radius: 50%;
+    
+}
+.intro{
+    position: absolute;
+    bottom: 200px;
+    padding-left: 75px;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.intro h2{
+    padding-left: 12px;
+    color: #232121;
+}
+.intro h3{
+    padding-left: 50px;
+    color: #232121;
+}
+.image-section:hover{
+    cursor: pointer;
+}
+.image-section:hover .intro{
+    visibility: visible;
+}
+.content-section .content h3{
+    margin-top: 40px;
+    color: rgb(16, 25, 25);
+    font-size: 18px;
+    line-height: 1.5;
+}
+.content-section .social{
+    margin-top: 40px;
+}
+.content-section .social i{
+    color: rgba(18, 10, 162, 0.667);
+    font-size: 30px;
+    padding-right: 20px;
+}
+.content-section .social i:hover{
+    color: #3d3d3d;
+}
+@media screen and (max-width: 800px){
+    .container{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content-section{
+        float: none;
+        width: 100%;
+        display: block;
+        margin: auto;
+    }
+    .image-section{
+        float: none;
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .image-section img{
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: auto;
+    }
+    .image-section .intro{
+        bottom: -600px;
+        padding-left: 195px; 
+    }
+    .content-section .title{
+        text-align: center;
+        font-size: 19px;
+    }
+    .content-section .social{
+        text-align: center;
+        padding-bottom: 20px;
+    }
+}

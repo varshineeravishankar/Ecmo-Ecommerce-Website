@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMO | Cart</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <script src="index.js"></script>
+</head>
+<body>
+        <div class="container">
+            <div class = "navbar">
+                <div class = "logo">
+                    <a href="index.html"><img src="images/logo.png" width="125px"></a>
+                </div>
+                <div class="search-bar">
+                    <input type="search" placeholder="Search for products" name="searchbar">
+                    <button type="submit"><img src="images/search.png"></button>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="">Sign in</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png"  width="25px" height="25px">
+                <img src="images/menu.png" class="menu-icon"  onclick="menutoggle()">
+            </div>
+        </div>
+    <!--------------------------------Cart----------------------------------------------->
+    <!-------------------------------footer------------------------------------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Ecmo Corporation</p>
+        </div>
+    </div>
+    <script>
+     var menuItems = document.getElementById("menuItems");
+        
+        menuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuItems.style.maxHeight == "0px"){
+                    menuItems.style.maxHeight = "200px";
+            }
+            else{
+                    menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

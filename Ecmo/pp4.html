@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMO | Phone Products</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <script src="index.js"></script>
+</head>
+<body>
+        <div class="container">
+            <div class = "navbar">
+                <div class = "logo">
+                    <a href="index.html"><img src="images/logo.png" width="125px"></a>
+                </div>
+                <div class="search-bar">
+                    <input type="search" placeholder="Search for products" name="searchbar">
+                    <button type="submit"><img src="images/search.png"></button>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="">Sign in</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png"  width="25px" height="25px">
+                <img src="images/menu.png" class="menu-icon"  onclick="menutoggle()">
+            </div>
+        </div>
+    <!--------------------------------Product Description----------------------------------------------->
+    <div class="small-container product">
+        <div class="row">
+            <div class="col-2">
+                <img src="images/p-prod4.jpg" width="100%" id="productImg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="images/p-prod4.jpg" width="100%" class="smallImg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/p-prod41.jpg" width="100%" class="smallImg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/p-prod42.jpg" width="100%" class="smallImg">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="images/p-prod43.jpg" width="100%" class="smallImg">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <h1>Apple iPhone 14 Pro (512GB) - Silver</h1>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <br>
+                <h2>₹1,51,905.00</h2>
+                <a href="" class="btn">Add to Cart</a>
+                <br><br>
+                <h3>Product Description</h3>
+                <br><br>
+                <table style="width: 100%;">
+                    <tr>
+                        <td><b>Brand</b></td>
+                        <td>Apple</td>
+                    </tr>
+                    <tr></tr><tr></tr>
+                    <tr>
+                        <td><b>Model Name</b></td>
+                        <td>iPhone</td>
+                    </tr>
+                    <tr></tr><tr></tr>
+                    <tr>
+                        <td><b>Size</b></td>
+                        <td>512GB</td>
+                    </tr>
+                    <tr></tr><tr></tr>
+                    <tr>
+                        <td><b>Network Service Provider</b></td>
+                        <td>Unlocked for All Carriers</td>
+                    </tr>
+                    <tr></tr><tr></tr>
+                    <tr>
+                        <td><b>Operating System</b></td>
+                        <td>iOS</td>
+                    </tr>
+                    <tr></tr><tr></tr>
+                    <tr>
+                        <td><b>Cellular Technology</b></td>
+                        <td>5G</td>
+                    </tr>
+                </table>
+                <br><br>
+                <ul style="list-style: disc;">
+                    <li>16.95 cm (6.7-inch) Super Retina XDR display</li>
+                    <li>Advanced camera system for better photos in any light</li>
+                    <li>Cinematic mode now in 4K Dolby Vision up to 30 fps</li>
+                    <li>Action mode for smooth, steady, handheld videos</li>
+                    <li>Vital safety technology — Crash Detection calls for help when you can't</li>
+                    <li>All-day battery life and up to 26 hours of video playback</li>
+                    <li>Industry-leading durability features with Ceramic Shield and water resistance</li>
+                    <li>A15 Bionic chip with 5-core GPU for lightning-fast performance. Superfast 5G cellular</li>
+                    <li>iOS 16 offers even more ways to personalise, communicate and share</li>
+                </ul>
+            </div>
+        </div>
+    </div>   
+    <br><br><br><br>
+    <!-------------------------------footer------------------------------------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Ecmo Corporation</p>
+        </div>
+    </div>
+    <script>
+     var menuItems = document.getElementById("menuItems");
+        
+        menuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuItems.style.maxHeight == "0px"){
+                    menuItems.style.maxHeight = "200px";
+            }
+            else{
+                    menuItems.style.maxHeight = "0px";
+            }
+        }
+        // ---------------------------Product Gallery-----------------------------
+        var productImg = document.getElementById("productImg");
+        var smallImg = document.getElementsByClassName("smallImg");
+        smallImg[0].onclick = function(){
+            productImg.src = smallImg[0].src;
+        }
+        smallImg[1].onclick = function(){
+            productImg.src = smallImg[1].src;
+        }
+        smallImg[2].onclick = function(){
+            productImg.src = smallImg[2].src;
+        }
+        smallImg[3].onclick = function(){
+            productImg.src = smallImg[3].src;
+        }
+    </script>
+</body>
+</html>

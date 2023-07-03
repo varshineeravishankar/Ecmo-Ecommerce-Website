@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMO | Ecommerce Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class = "navbar">
+                <div class = "logo">
+                    <img src="images/logo.png" width="125px">
+                </div>
+                <div class="search-bar">
+                    <input type="search" placeholder="Search for products" name="searchbar">
+                    <button type="submit"><img src="images/search.png"></button>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="">Sign in</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png"  width="25px" height="25px">
+                <img src="images/menu.png" class="menu-icon"  onclick="menutoggle()">
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <h1>Expect The Unexpected.</h1>
+                    <p>The ultimate store for the inner geek in you</p>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" class="btn">Explore</button>
+                        <div id="myDropdown" class="dropdown-content">
+                          <a href="pproduct.html">Phone</a>
+                          <a href="lproduct.html">Laptop</a>
+                          <a href="tproduct.html">Tablet</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-2">
+                    <img id="image" src="images/phone.jpg">
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br>
+        </div>
+    </div>
+    <!--------------------------------Latest Product----------------------------------------------->
+    <div class="small-container">
+        <h2 class="title">Latest Product</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="pp1.html"><img src="images/p-prod1.jpg"></a>
+                <h4><br>Apple iPhone 14 Plus (128 GB) - Purple</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>₹80,999.00</p>
+            </div>
+            <div class="col-4">
+                <a href="pp2.html"><img src="images/p-prod2.jpg"></a>
+                <h4><br>OnePlus 11 Eternal Green 16GB 256GB</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹61,999.00</p>
+            </div>
+            <div class="col-4">
+                <a href="lp1.html"><img src="images/l-prod1.jpg"></a>
+                <h4><br>HP Pavilion 15,12th Gen Intel Core i5 (15.6 inch, 8GB, 512GB)</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹71,999.00</p>
+            </div>
+            <div class="col-4">
+                <a href="tp1.html"><img src="images/t-prod1.jpg"></a>
+                <h4><br>11-inch iPad Pro Wi-Fi 2TB - Space Grey - Apple</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>₹1,84,224.00</p>
+            </div>
+        </div>
+    </div>
+    <!-------------------------offer-------------------------->
+    <div class="offer">
+        <div class="small-container">
+            <div class="row">
+                <div class="col">
+                    <img src="images/exclusive.jpg" class="offer-img">
+                </div>
+                <div class="col">
+                    <p>Exclusively Available on Ecmo</p>
+                    <h1>Google Pixel 6 5G (Sorta Seafoam, 8GB RAM, 128GB Storage)</h1>
+                    <small>Meet Pixel 6, the Google 5G cell phone that's completely reimagined, inside and out</small>
+                    <a href="exclusive.html" class="btn">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!---------------------------------testimonial--------------------------->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>I recently purchased a mobile from Ecmo, and I couldn't be happier with my online shopping experience. Their website was user-friendly, making it easy to find the perfect item. The checkout process was smooth, and I received my order promptly. I'm thrilled with the quality and will definitely shop at Ecmo again in the future. Highly recommended!</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="images/user-1.webp">
+                    <br><br>
+                    <h3>Helen Sharpe</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>I ordered a laptop from Ecmo last week, and I was amazed at how quickly it arrived. The packaging was secure, ensuring the item was undamaged. The customer service was exceptional, as they kept me updated throughout the entire process. I had a question about the product, and their support team responded promptly and professionally. Overall, my experience with Ecmo was outstanding.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-2.jpg">
+                    <br><br>
+                    <h3>Seeley Booth</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p>I recently discovered Ecmo. Not only did they have the item I was looking for, but their selection was vast, and the prices were competitive. The website was easy to navigate, and the product descriptions were informative and accurate. I was pleasantly surprised by the fast shipping and the care they took in packaging my order.</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-o"></i>
+                    </div>
+                    <img src="images/user-3.jpg">
+                    <br><br>
+                    <h3>Ange Brennen</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------------------------brands-------------------------------->
+    <div class="brands">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-6">
+                    <img src="images/apple.png">
+                </div>
+                <div class="col-6">
+                    <img src="images/google.png">
+                </div>
+                <div class="col-6">
+                    <img src="images/oneplus.png">
+                </div>
+                <div class="col-6">
+                    <img src="images/samsung.png">
+                </div>
+                <div class="col-6">
+                    <img src="images/hp.png">
+                </div>
+                <div class="col-6">
+                    <img src="images/dell.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------------------footer------------------------------------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Ecmo Corporation</p>
+        </div>
+    </div>
+    <script>
+    // Explore button dropdown
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+    }
+    window.onclick = function(event) {
+        if (!event.target.matches('.btn')) {
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                }
+            }
+        }
+    }
+    // Menutoggle
+    var menuItems = document.getElementById("menuItems");
+    menuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if(menuItems.style.maxHeight == "0px"){
+            menuItems.style.maxHeight = "200px";
+        }
+        else{
+            menuItems.style.maxHeight = "0px";
+        }
+    }
+    // Image change
+    var imageSources = ["images/laptop.jpg", "images/tablet.jpg","images/phone.jpg"]
+    var index = 0;
+    setInterval (function(){
+        if (index === imageSources.length) {
+            index = 0;
+        }
+        document.getElementById("image").src = imageSources[index];
+        index++;
+    } , 2000);
+    </script>
+</body>
+</html>

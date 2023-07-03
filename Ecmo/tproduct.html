@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECMO | Tablet Products</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="images/logo.png">
+    <script src="index.js"></script>
+</head>
+<body>
+        <div class="container">
+            <div class = "navbar">
+                <div class = "logo">
+                    <a href="index.html"><img src="images/logo.png" width="125px"></a>
+                </div>
+                <div class="search-bar">
+                    <input type="search" placeholder="Search for products" name="searchbar">
+                    <button type="submit"><img src="images/search.png"></button>
+                </div>
+                <nav>
+                    <ul id="menuItems">
+                        <li><a href="">Sign in</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <img src="images/cart.png"  width="25px" height="25px">
+                <img src="images/menu.png" class="menu-icon"  onclick="menutoggle()">
+            </div>
+        </div>
+    <!--------------------------------Tablet Products----------------------------------------------->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>All Products</h2>
+            <select>
+                <option>Default</option>
+                <option>Sort by price</option>
+                <option>Sort by rating</option>
+            </select>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <a href="tp1.html"><img src="images/t-prod1.jpg"></a>
+                <h4><br>Apple iPad Pro M2 12.9 (6th Generation) MNXU3HN/A 512GB Wi-Fi (Space Grey)</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                </div>
+                <p>₹1,84,224.00</p>
+            </div>
+            <div class="col-4">
+                <a href="tp2.html"><img src="images/t-prod2.jpg"></a>
+                <h4><br>Apple 10.2-inch iPad with A13 Bionic chip (Wi-Fi, 256GB) - Space Grey (9th Generation)</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    
+                </div>
+                <p>₹29,664.00</p>
+            </div>
+            <div class="col-4">
+                <a href="tp3.html"><img src="images/t-prod3.jpg"></a>
+                <h4><br>SAMSUNG Galaxy Tab S7 FE 4GB RAM 64 GB ROM 12.4 inches with Wi-FiTablet (Black)</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹41,999.00</p>
+            </div>
+            <div class="col-4">
+                <a href="tp4.html"><img src="images/t-prod4.jpg"></a>
+                <h4><br>SAMSUNG Galaxy Tab S6 Lite 4 GB RAM 64 GB ROM 10.4 inch with Wi-Fi+4G Tablet (Blue)</h4>
+                <div class="rating">
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                </div>
+                <p>₹32,999.00</p>
+            </div>
+        </div>
+        <div class="center">
+            <div class="page-btn">
+                <span>1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>&#8594;</span>
+            </div>
+        </div>
+    </div>    
+    <!-------------------------------footer------------------------------------>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and iOS</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affiliate</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - Ecmo Corporation</p>
+        </div>
+    </div>
+    <script>
+     var menuItems = document.getElementById("menuItems");
+        
+        menuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(menuItems.style.maxHeight == "0px"){
+                    menuItems.style.maxHeight = "200px";
+            }
+            else{
+                    menuItems.style.maxHeight = "0px";
+            }
+        }
+    </script>
+</body>
+</html>
